@@ -1,11 +1,17 @@
 import React from "react";
 
-function App() {
+import Header from "./components/Header";
+import Financials from "./components/Financials";
+import Footer from "./components/Footer";
+
+const App = () => {
   return (
-    <div className="App">
-      <div></div>
+    <div id="main-container">
+      <Header />
+      <Financials />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

@@ -10,4 +10,5 @@ FinanceMe is an app that allows you to manage your finances, simply. Instead of 
 
 ## Resources 💨
 
-- N/A
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Organizing your CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing)
