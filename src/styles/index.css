@@ -1,46 +1,45 @@
-/* General */
 * {
   margin: 0;
   padding: 0;
-  background-color: #e4eeff;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+#app {
+  min-height: 100vh;
 }
 
-/* App Page */
-#main-container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
+#app-header {
 }
 
-/* Header Component */
-#header-container {
-  padding: 20px;
-  border: solid black 5px;
-  display: flex;
-  justify-content: space-between;
+#app-footer {
 }
 
-/* Financials Component */
-#financials-container {
-  flex-grow: 1;
+#app-financials {
+  font-size: 1.5rem;
+  padding: 40px;
+  margin: 40px;
+  border: solid 3px black;
 }
 
-/* Footer Component */
-#footer-container {
-  padding: 20px;
-  border: solid black 5px;
+.row-centered-col {
+  justify-content: center;
 }
 
-#budget-container {
-  display: flex;
-  justify-content: space-between;
+.row-text-centered-col {
+  text-align: center;
 }
 
-#budget-num {
+/* COMPONENTS */
+/* header */
+.header-right,
+.footer-right {
+  float: right;
+}
+
+/* footer */
+.social-icons {
+  float: right;
+}
+
+.social-icons a {
+  margin: 10px;
 }

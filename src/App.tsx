@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Layout } from "antd";
 
 import Header from "./components/Header";
 import Financials from "./components/Financials";
@@ -6,11 +8,13 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div id="main-container">
-      <Header />
-      <Financials />
-      <Footer />
-    </div>
+    <Router>
+      <Layout id="app" className="layout">
+        <Header />
+        <Financials />
+        <Footer />
+      </Layout>
+    </Router>
   );
 };
 

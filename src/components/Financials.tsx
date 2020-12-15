@@ -1,10 +1,13 @@
 import React from "react";
+import { Layout, Row, Col } from "antd";
 
 const Financials = () => {
   return (
-    <div id="financials-container">
-      <div></div>
-    </div>
+    <Layout id="app-financials">
+      <Row>
+        <Col>Financials</Col>
+      </Row>
+    </Layout>
   );
 };
 
