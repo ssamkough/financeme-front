@@ -4,7 +4,7 @@
 }
 
 #app {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 #app-header li,
@@ -21,6 +21,15 @@
   padding: 40px;
   margin: 40px;
   border: solid 3px black;
+}
+
+#app-financials .app-chart {
+  height: 100vh;
+}
+
+.chart-component-menu {
+  background-color: transparent !important;
+  padding-bottom: 10px;
 }
 
 .row-centered-col {
