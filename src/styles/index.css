@@ -7,10 +7,13 @@
   min-height: 100vh;
 }
 
-#app-header {
+#app-header li,
+#app-footer li {
+  font-size: medium;
 }
 
-#app-footer {
+.social-icons {
+  font-size: x-large;
 }
 
 #app-financials {
@@ -36,6 +39,14 @@
 }
 
 /* footer */
+.made-by-me {
+  font-size: medium;
+}
+
+.buy-me-a-coffee {
+  float: right;
+}
+
 .social-icons {
   float: right;
 }

@@ -34,3 +34,4 @@ FinanceMe is an app that allows you to manage your finances, simply. Instead of 
   - Predicts how much you’ll make based off of how much you’re making (can predict for the next month, 2 months, it’s configurable)
 - Seeing in what categories I spent the most
 - Put in items you want to purchase for the month and see if it crosses budget
+- push to domain (try using aws instead of netlify)

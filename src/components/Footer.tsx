@@ -11,8 +11,33 @@ const Footer = () => {
   const fullYear = new Date().getFullYear();
   const fullYearElem = (
     <span>
-      <span>{fullYear}</span> <span>Brains</span>
+      <span>{fullYear}</span> <span>FinanceMe</span>
     </span>
+  );
+
+  const madeByMeElem = (
+    <div className="made-by-me">
+      Made by{" "}
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="http://sammysamkough.com/"
+      >
+        Sammy Samkough
+      </a>
+    </div>
+  );
+
+  const buyMeACoffeeElem = (
+    <div className="buy-me-a-coffee">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.buymeacoffee.com/ssamkough"
+      >
+        <img alt="buy-me-a-coffee" width={200} src="./buy-me-a-coffee.png" />
+      </a>
+    </div>
   );
 
   const twitterUrl = "https://google.com";
@@ -32,13 +57,13 @@ const Footer = () => {
     </span>
   );
 
-  const data = [fullYearElem, socialsElem];
+  const footerData = [madeByMeElem, buyMeACoffeeElem];
 
   return (
     <Footer id="app-footer">
       <List
         grid={{ gutter: 0, column: 2 }}
-        dataSource={data}
+        dataSource={footerData}
         renderItem={(item) => <List.Item>{item}</List.Item>}
       />
     </Footer>
