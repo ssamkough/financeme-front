@@ -9,6 +9,22 @@ FinanceMe is an app that allows you to manage your finances, simply. Instead of 
 - [React](https://reactjs.org/)
 - [Ant Design](https://ant.design/)
 
+## Data Model 💽
+
+Transaction
+
+- Import transactions
+
+Expense
+
+- Get all expenses
+- CRUD expense
+
+Payment
+
+- Get all payments
+- CRUD payment
+
 ## Resources 💨
 
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
@@ -22,18 +38,11 @@ FinanceMe is an app that allows you to manage your finances, simply. Instead of 
 
 ## Todo ✔️
 
-- what models are there, what attributes do they have, what actions do they have, etc. (user, transaction, etc.)
-  - Transaction:
-    - Import transactions
-  - Expense:
-    - Get all expenses
-    - CRUD expense
-  - Payment:
-    - Get all payments
-    - CRUD payment
 - Seeing if I went past my budget
   - Predicts how much you’ll make based off of how much you’re making (can predict for the next month, 2 months, it’s configurable)
 - Seeing in what categories I spent the most
 - Put in items you want to purchase for the month and see if it crosses budget
 - how will i visualize the payments
+- enable sign in/sign out func
+  - this will entail us to save user data (when we'll start needing to work on backend)
 - push to domain (try using aws instead of netlify)
