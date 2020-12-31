@@ -40,7 +40,6 @@ Future Purchases
 
 - [@ant-design/charts](https://github.com/ant-design/ant-design-charts)
 - [Ant Design Charts Gallery](https://charts.ant.design/demos/global/)
-- [BizCharts](https://bizcharts.net/product/BizCharts4/gallery)
 
 ## Todo ✔️
 

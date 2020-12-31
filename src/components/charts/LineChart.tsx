@@ -1,36 +1,50 @@
-import React from "react";
-import { Chart, Area, Line, Tooltip } from "bizcharts";
+import React, { useState, useEffect } from "react";
+import { Line } from "@ant-design/charts";
 
 const LineChart = () => {
-  const data = [
-    { year: "1991", value: 15468 },
-    { year: "1992", value: 16100 },
-    { year: "1993", value: 15900 },
-    { year: "1994", value: 17409 },
-    { year: "1995", value: 17000 },
-    { year: "1996", value: 31056 },
-    { year: "1997", value: 31982 },
-    { year: "1998", value: 32040 },
-    { year: "1999", value: 33233 },
-  ];
+  const [data, setData] = useState([]);
+  let ref: any;
 
-  const scale = {
-    value: {
-      min: 10000,
-      nice: true,
-    },
-    year: {
-      range: [0, 1],
+  useEffect(() => {
+    asyncFetch();
+  }, []);
+
+  const asyncFetch = () => {
+    fetch(
+      "https://gw.alipayobjects.com/os/bmw-prod/1d565782-dde4-4bb6-8946-ea6a38ccf184.json"
+    )
+      .then((response) => response.json())
+      .then((json) => setData(json))
+      .catch((error) => {
+        console.log("Data failed FETCH", error);
+      });
+  };
+
+  var config = {
+    data: data,
+    xField: "Date",
+    yField: "scales",
+    xAxis: {
+      type: "timeCat",
+      tickCount: 5,
     },
   };
 
-  return (
-    <Chart className="app-chart" scale={scale} data={data} autoFit>
-      <Tooltip shared />
-      <Area position="year*value" />
-      <Line position="year*value" />
-    </Chart>
-  );
+  useEffect(() => {
+    var cnt = 0;
+    var smooth = false;
+    var interval = setInterval(function () {
+      if (cnt < 5) {
+        smooth = !smooth;
+        cnt += 1;
+        ref.update({ smooth: smooth });
+      } else {
+        clearInterval(interval);
+      }
+    }, 1000);
+  });
+
+  return <Line {...config} chartRef={(chartRef) => (ref = chartRef)} />;
 };
 
 export default LineChart;

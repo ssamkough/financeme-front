@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Form, Input, InputNumber, Modal, Radio } from "antd";
+import { Form, Input, InputNumber, Modal, Radio } from "antd";
 
 const PaymentsModal = ({
   isModalVisible,
