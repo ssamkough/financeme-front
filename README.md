@@ -13,17 +13,23 @@ FinanceMe is an app that allows you to manage your finances, simply. Instead of 
 
 Transaction
 
-- Import transactions
+- id: uniqueidentifier
+- created_at: Date
 
-Expense
+Expenses
 
-- Get all expenses
-- CRUD expense
+- id: uniqueidentifier
+- created_at: Date
 
 Payment
 
-- Get all payments
-- CRUD payment
+- id: uniqueidentifier
+- created_at: Date
+
+Future Purchases
+
+- id: uniqueidentifier
+- created_at: Date
 
 ## Resources 💨
 
