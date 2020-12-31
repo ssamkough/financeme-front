@@ -35,6 +35,7 @@ Future Purchases
 
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Organizing your CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing)
+- [Build a CI/CD Pipeline for a React App | AWS CodePipeline Full Tutorial | Code With Me!](https://www.youtube.com/watch?v=zkNdHv1iMgY)
 
 ### Ant Design 🐜
 
