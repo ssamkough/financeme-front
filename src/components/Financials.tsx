@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Layout, Row, Col, Menu } from "antd";
 import Loader from "react-loader-spinner";
 
+import getFinancialData from "./../utilities/getFinancialData";
+
 import LineChart from "./charts/LineChart";
 import WaveChart from "./charts/WaveChart";
 import PieChart from "./charts/PieChart";
@@ -10,12 +12,19 @@ const Financials = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
   const [chart, setChart] = useState(0);
+  const [data, setData] = useState([] as any);
 
-  const chartComponents = [<LineChart />, <WaveChart />, <PieChart />];
+  const chartComponents = [
+    <LineChart data={data.line} />,
+    <WaveChart data={data.wave} />,
+    <PieChart data={data.pie} />,
+  ];
 
   useEffect(() => {
     setIsLoading(false);
     setIsError(false);
+    console.log("FINANCIAL", getFinancialData);
+    setData(getFinancialData);
   }, []);
 
   const handleClick = (e: any) => {

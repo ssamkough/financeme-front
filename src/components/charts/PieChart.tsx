@@ -1,34 +1,8 @@
 import React from "react";
 import { Pie } from "@ant-design/charts";
 
-const PieChart = () => {
-  var data = [
-    {
-      type: "Classification One",
-      value: 27,
-    },
-    {
-      type: "Class 2",
-      value: 25,
-    },
-    {
-      type: "Classification Three",
-      value: 18,
-    },
-    {
-      type: "Classification Four",
-      value: 15,
-    },
-    {
-      type: "Classification Five",
-      value: 10,
-    },
-    {
-      type: "Other",
-      value: 5,
-    },
-  ];
-  var config = {
+const PieChart = ({ data }: { data: any }) => {
+  const config = {
     appendPadding: 10,
     data: data,
     angleField: "value",
@@ -48,6 +22,7 @@ const PieChart = () => {
     },
     interactions: [{ type: "element-active" }],
   };
+
   return <Pie {...config} />;
 };
 

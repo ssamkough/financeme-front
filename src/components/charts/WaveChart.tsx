@@ -1,9 +1,9 @@
 import React from "react";
 import { Liquid } from "@ant-design/charts";
 
-const WaveChart = () => {
-  var config = {
-    percent: 0.25,
+const WaveChart = ({ data }: { data: any }) => {
+  const config = {
+    percent: data,
     statistic: {
       content: {
         style: {
@@ -12,6 +12,7 @@ const WaveChart = () => {
       },
     },
   };
+
   return <Liquid {...config} />;
 };
 
