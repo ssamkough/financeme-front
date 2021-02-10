@@ -1,7 +1,7 @@
 # FinanceMe Frontend 💸
 
-[![Website financeme.money](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://financeme.money)<br/>
-[financeme.money](https://financeme.money)
+[![Website financeme.money](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://financeme.money)<br/>
+[financeme.money](http://financeme.money)
 
 This is the frontend for the FinanceMe app.
 
